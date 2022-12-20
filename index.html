@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link Bootstrap File -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <!-- link Fontawesome Icon  -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!-- link my css file -->
+    <link rel="stylesheet" href="css/style.css">
+    <title>XO Game</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="game row row-cols-1">
+            <div class="col game-bar">
+                <div class="row h-100">
+                    <div id="player1" class="col d-flex flex-column flex-sm-row justify-content-between align-items-center">
+                        <div class="player-name fs-2">
+                            player X
+                        </div>
+                        <div class="player-score fs-2" id="player1Score">
+                            0
+                        </div>
+                    </div>
+                    <div id="player2" class="col d-flex flex-column flex-sm-row-reverse justify-content-between align-items-center">
+                        <div class="player-name fs-2">
+                            player O
+                        </div>
+                        <div class="player-score fs-2" id="player2Score">
+                            0
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col h-75">
+                <div class="box-container row row-cols-3 h-100">
+                    <div class="col">
+                        <div class="squre" id="box1"></div>
+                    </div>
+                    <div class="col">
+                        <div class="squre" id="box2"></div>
+                    </div>
+                    <div class="col">
+                        <div class="squre " id="box3"></div>
+                    </div>
+
+
+                    <div class="col">
+                        <div class="squre" id="box4"></div>
+                    </div>
+                    <div class="col">
+                        <div class="squre" id="box5"></div>
+                    </div>
+                    <div class="col">
+                        <div class="squre" id="box6"></div>
+                    </div>
+
+
+                    <div class="col">
+                        <div class="squre" id="box7"></div>
+                    </div>
+                    <div class="col">
+                        <div class="squre" id="box8"></div>
+                    </div>
+                    <div class="col">
+                        <div class="squre" id="box9"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col button">
+                <button class="btn w-100" id="restBtn">reset</button>
+            </div>
+        </div>
+    </div>
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="js/myscript.js"></script>
+</body>
+
+</html>

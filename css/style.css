@@ -1,0 +1,67 @@
+:root{
+    --main-color:#f25;
+    --second-color:blue;
+}
+body{
+    background: rgb(63,94,251);
+    background: linear-gradient(167deg, rgba(63,94,251,1) 0%, rgba(219,124,143,1) 100%);
+    
+}
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.game{
+    width: 100%;
+    border: 5px solid var(--main-color);
+    max-width: 400px;
+}
+.game-bar{
+    color: white;
+    background-color: var(--main-color);
+}
+.box-container .col{
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.squre{
+    margin: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    font-weight: 700;
+    background-color: var(--main-color);
+    width: 150px;
+    height: 150px;
+    color: white;
+    cursor: pointer;
+}
+.player-datails{
+    font-size: 2vw;
+    color: white;
+
+}
+button{
+    background-color: var(--main-color) !important;
+    color: white !important;
+    text-transform: capitalize;
+    border-radius: 0px !important;
+    -webkit-border-radius: 0px !important;
+    -moz-border-radius: 0px !important;
+    -ms-border-radius: 0px !important;
+    -o-border-radius: 0px !important;
+    font-size: 25px !important;
+}
+button:active{
+    border: none !important;
+    box-shadow:#0000009e 0px 0px 20px 9px inset;
+}
+.button{
+    padding: 0px;
+}
