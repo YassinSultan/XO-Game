@@ -1,11 +1,10 @@
 :root{
-    --main-color:#f25;
-    --second-color:blue;
+    --main-color:#22A39F;
+    --second-color:rgb(36, 36, 118);
 }
 body{
     background: rgb(63,94,251);
-    background: linear-gradient(167deg, rgba(63,94,251,1) 0%, rgba(219,124,143,1) 100%);
-    
+    background: linear-gradient(160deg, rgb(243, 239, 224) 30%, rgb(34, 163, 159) 100%);
 }
 .container {
     height: 100vh;

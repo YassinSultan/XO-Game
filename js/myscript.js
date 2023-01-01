@@ -6,7 +6,7 @@ let squres = document.querySelectorAll(".squre")
 
 let playerX=0
 let playerO=0
-player1.style.backgroundColor="blue"
+player1.style.backgroundColor="#222222"
 let X = true;
 let O = false;
 
@@ -14,7 +14,7 @@ let end1=false
 function reset(){
     for(let i=0;i<=8;i++){
         squres[i].innerHTML=""
-        squres[i].style.backgroundColor="#f25"
+        squres[i].style.backgroundColor="#22A39F"
         squres[i].style="box-shadow: inset 0px 0px 0px 0px black;"
     }
 
@@ -22,8 +22,8 @@ function reset(){
 
 function end(num1,num2,num3){
     end1=true
-    player2.style.backgroundColor="blue"
-    player1.style.backgroundColor="blue"
+    player2.style.backgroundColor="#222222"
+    player1.style.backgroundColor="#222222"
 
     squres[num1].style.backgroundColor="rgb(131, 21, 47)"
     squres[num2].style.backgroundColor="rgb(131, 21, 47)"
@@ -37,16 +37,16 @@ function end(num1,num2,num3){
             player1Score.innerHTML=playerX
             X =true
             O =false
-            player2.style.backgroundColor="#f25"
-            player1.style.backgroundColor="blue"
+            player2.style.backgroundColor="#22A39F"
+            player1.style.backgroundColor="#222222"
         }
         else if(squres[num1].innerHTML=="O"){
             playerO++
             player2Score.innerHTML=playerO
             X =false
             O =true
-            player2.style.backgroundColor="blue"
-            player1.style.backgroundColor="#f25"
+            player2.style.backgroundColor="#222222"
+            player1.style.backgroundColor="#22A39F"
         }
         reset() 
     },2000)
@@ -117,15 +117,15 @@ function game(id){
         box.innerHTML="X"
         X=false
         O=true
-        player1.style.backgroundColor="#f25"
-        player2.style.backgroundColor="blue"
+        player1.style.backgroundColor="#22A39F"
+        player2.style.backgroundColor="#222222"
     }
     else if(O===true && box.innerHTML ==""){
         box.innerHTML="O"
         X=true
         O==false
-        player2.style.backgroundColor="#f25"
-        player1.style.backgroundColor="blue"
+        player2.style.backgroundColor="#22A39F"
+        player1.style.backgroundColor="#222222"
     }
     winner()
 }
